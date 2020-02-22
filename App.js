@@ -74,37 +74,37 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
   card1: {
-    backgroundColor: '#5AF77D',
+    backgroundColor: "rgb(157,191,104)",
     alignItems: 'center',
     justifyContent: 'center',
     height: 70
   },
   card2: {
-    backgroundColor: '#FC1E35',
+    backgroundColor: 'rgb(117,193,189)',
     alignItems: 'center',
     justifyContent: 'center',
     height: 70
   },
   card3: {
-    backgroundColor: '#0CECF9',
+    backgroundColor: 'rgb(214,145,140)',
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
   },
   card4: {
-    backgroundColor: '#0CECF9',
+    backgroundColor: '#F6C650',
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
   },
   card5: {
-    backgroundColor: '#0CECF9',
+    backgroundColor: 'rgb(230,178,120)',
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
   },
   card6: {
-    backgroundColor: '#0CECF9',
+    backgroundColor: '#F68250',
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
