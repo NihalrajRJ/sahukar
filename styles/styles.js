@@ -5,7 +5,6 @@ export const globalStyles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
-      justifyContent: 'center',
     },
     titleText: {
         fontFamily: 'ubuntu-regular',
@@ -15,13 +14,13 @@ export const globalStyles = StyleSheet.create({
         color: 'white',
         fontWeight: '900',
         fontSize: 18,
-        fontFamily:'ubuntu-regular'
-    },
-    cardContainerView1: {
-        paddingTop: 10
+        fontFamily:'ubuntu-regular',
+        alignItems: 'center',
+        textAlign:'center',
+        justifyContent:"center"
     },
     buttonContainer: {
-        alignItems: 'flex-end',
+        alignItems: 'center',
         paddingTop: 50,
     },
   });
