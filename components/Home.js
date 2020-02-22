@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native';
 import { Card } from 'react-native-shadow-cards';
 import Login from './Login';
+import {globalStyles} from '../styles/styles';
 
 export default function Home({navigation}){
   
@@ -10,53 +11,53 @@ export default function Home({navigation}){
   }
   return (
     <>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={globalStyles.container}>
         <ScrollView style={styles.scrollView}>
-          <View style={styles.container}>
+          <View style={globalStyles.container}>
             <TouchableOpacity>
               <View style={styles.cardContainerView}>
                 <Card style={styles.card1}>
-                  <Text style={styles.cardContainerText1}>Daily Expenses</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}>Daily Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card2}>
-                  <Text style={styles.cardContainerText2}>Monthly Expenses</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}>Monthly Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView2}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card3}>
-                  <Text style={styles.cardContainerText3}> Medical Expenses</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}> Medical Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView3}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card4}>
-                  <Text style={styles.cardContainerText4}> Cash For Education</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}> Cash For Education</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView4}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card5}>
-                  <Text style={styles.cardContainerText5}> Gifts for Parents/Loved Ones</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}> Gifts for Parents/Loved Ones</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView5}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card6}>
-                  <Text style={styles.cardContainerText6}> Party Expenses</Text>
+                  <Text style={globalStyles.cardContainerTextHomePage}> Party Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.buttonContainer}>
+              <View style={globalStyles.buttonContainer}>
                 <Button style={styles.buttonStyleContainer} title="Go to Login Page" onPress={pressHandler} />
               </View>
             </TouchableOpacity>
@@ -73,10 +74,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  buttonContainer: {
-    alignItems: 'flex-end',
-    paddingTop: 50,
   },
   card1: {
     backgroundColor: "rgb(157,191,104)",
@@ -113,51 +110,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 70,
-  },
-  cardContainerText1: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerText2: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerText3: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerText4: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerText5: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerText6: {
-    color: 'white',
-    fontWeight: '900',
-    fontSize: 18,
-  },
-  cardContainerView1: {
-    paddingTop: 10
-  },
-  cardContainerView2: {
-    paddingTop: 10
-  },
-  cardContainerView3: {
-    paddingTop: 10
-  },
-  cardContainerView4: {
-    paddingTop: 10
-  },
-  cardContainerView5: {
-    paddingTop: 10
   },
   cardContainerView: {
     paddingTop: 40
