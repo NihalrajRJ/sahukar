@@ -3,7 +3,7 @@
     "name": "Blank Template",
     "slug": "TestProject",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
+    "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
       "android",
