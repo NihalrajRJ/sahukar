@@ -18,35 +18,35 @@ export default function App() {
             <TouchableOpacity>
               <View style={styles.cardContainerView1}>
                 <Card style={styles.card2}>
-                  <Text style={styles.cardContainer1Text}>Monthly Expenses</Text>
+                  <Text style={styles.cardContainerText2}>Monthly Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
               <View style={styles.cardContainerView2}>
                 <Card style={styles.card3}>
-                  <Text style={styles.cardContainer2Text}> Medical Expenses</Text>
+                  <Text style={styles.cardContainerText3}> Medical Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
               <View style={styles.cardContainerView3}>
                 <Card style={styles.card4}>
-                  <Text style={styles.cardContainer3Text}> Cash For Education</Text>
+                  <Text style={styles.cardContainerText4}> Cash For Education</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
               <View style={styles.cardContainerView4}>
                 <Card style={styles.card5}>
-                  <Text style={styles.cardContainer4Text}> Gifts for Parents/Loved Ones</Text>
+                  <Text style={styles.cardContainerText5}> Gifts for Parents/Loved Ones</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
               <View style={styles.cardContainerView5}>
                 <Card style={styles.card6}>
-                  <Text style={styles.cardContainer5Text}> Party Expenses</Text>
+                  <Text style={styles.cardContainerText6}> Party Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
@@ -110,6 +110,31 @@ const styles = StyleSheet.create({
     height: 70,
   },
   cardContainerText1: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 18,
+  },
+  cardContainerText2: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 18,
+  },
+  cardContainerText3: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 18,
+  },
+  cardContainerText4: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 18,
+  },
+  cardContainerText5: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 18,
+  },
+  cardContainerText6: {
     color: 'white',
     fontWeight: '900',
     fontSize: 18,
