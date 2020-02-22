@@ -19,5 +19,9 @@ export const globalStyles = StyleSheet.create({
     },
     cardContainerView1: {
         paddingTop: 10
-    }
+    },
+    buttonContainer: {
+        alignItems: 'flex-end',
+        paddingTop: 50,
+    },
   });

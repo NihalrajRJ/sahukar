@@ -22,42 +22,42 @@ export default function Home({navigation}){
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card2}>
                   <Text style={globalStyles.cardContainerTextHomePage}>Monthly Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card3}>
                   <Text style={globalStyles.cardContainerTextHomePage}> Medical Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card4}>
                   <Text style={globalStyles.cardContainerTextHomePage}> Cash For Education</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card5}>
                   <Text style={globalStyles.cardContainerTextHomePage}> Gifts for Parents/Loved Ones</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.cardContainerView1}>
+              <View style={globalStyles.cardContainerView1}>
                 <Card style={styles.card6}>
                   <Text style={globalStyles.cardContainerTextHomePage}> Party Expenses</Text>
                 </Card>
               </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.buttonContainer}>
+              <View style={globalStyles.buttonContainer}>
                 <Button style={styles.buttonStyleContainer} title="Go to Login Page" onPress={pressHandler} />
               </View>
             </TouchableOpacity>
@@ -74,10 +74,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  buttonContainer: {
-    alignItems: 'flex-end',
-    paddingTop: 50,
   },
   card1: {
     backgroundColor: "rgb(157,191,104)",
