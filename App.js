@@ -5,6 +5,7 @@ import Login from './components/Login';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 import Header from './components/Header';
+import Navigator from './routes/drawer';
 
 const getFonts = () => Font.loadAsync({
   'ubuntu-regular': require('./assets/fonts/Ubuntu-Regular.ttf'),
@@ -16,7 +17,7 @@ export default function App() {
 
   if (fontsLoaded) {
     return (
-      <Header />
+      <Navigator />
   );
   } else {
     return (

@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaV
 import { Card } from 'react-native-shadow-cards';
 import Login from './Login';
 import { globalStyles } from '../styles/styles';
+import DetailsForm from './DetailsForm';
 
 export default function Home({ navigation }) {
 
@@ -22,6 +23,9 @@ export default function Home({ navigation }) {
   const pressHandler = () => {
     navigation.navigate('Login');
   }
+  const navigateToDetailsForm = () => {
+    navigation.navigate('DetailsForm');
+  }
   return (
     <>
       <View style={globalStyles.container}>
@@ -33,7 +37,7 @@ export default function Home({ navigation }) {
             <TouchableOpacity onPress={() => handlePress(item.id)}>
               <View style={styles.cardContainerView}>
                 <Card style={styles.card1}>
-                  <Text style={globalStyles.cardContainerTextHomePage}>{item.name}</Text>
+                  <Button style={globalStyles.cardContainerTextHomePage} onPress={navigateToDetailsForm} title={item.name} />
                 </Card>
               </View>
             </TouchableOpacity>

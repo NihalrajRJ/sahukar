@@ -1,21 +1,36 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
 import Home from '../components/Home';
-import About from '../components/About';
+import DetailsForm from '../components/DetailsForm';
 import Login from '../components/Login';
 
 const screens = {   
     Home: {
-        screen: Home
+        screen: Home,
+        navigationOptions: {
+            title: 'Sahukar'
+        }
     },
     Login: {
-        screen: Login
+        screen: Login,
+        navigationOptions: {
+            title: 'Login'
+        }
     },
-    About: {
-        screen: About
+    DetailsForm: {
+        screen: DetailsForm,
+        navigationOptions: {
+            title: 'Details'
+        }
     }
 }
 
-const loginStack = createStackNavigator(screens);
+const LoginStack = createStackNavigator(screens,{
+    defaultNavigationOptions: {
+        headerTintColor: '#444',
+        headerStyle: {
+            backgroundColor: '#eee' , height:60
+        }
+    }
+});
 
-export default createAppContainer(loginStack);
+export default LoginStack;
