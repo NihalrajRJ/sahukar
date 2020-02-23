@@ -11,7 +11,7 @@ export const globalStyles = StyleSheet.create({
         fontSize: 18
     },
     cardContainerTextHomePage: {
-        color: 'white',
+        color: 'rgb(117,193,189)',
         fontWeight: '900',
         fontSize: 18,
         fontFamily:'ubuntu-regular',
@@ -21,6 +21,6 @@ export const globalStyles = StyleSheet.create({
     },
     buttonContainer: {
         alignItems: 'center',
-        paddingTop: 50,
+        paddingTop: 10
     },
   });
