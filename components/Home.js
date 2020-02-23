@@ -37,23 +37,30 @@ export default function Home({ navigation }) {
             <TouchableOpacity onPress={() => handlePress(item.id)}>
               <View style={styles.cardContainerView}>
                 <Card style={styles.card1}>
-                  <Button style={globalStyles.cardContainerTextHomePage} onPress={navigateToDetailsForm} title={item.name} />
+                <TouchableOpacity
+                  //style={globalStyles.cardContainerTextHomePage} 
+                  onPress={navigateToDetailsForm} 
+                  >
+                    <Text style={globalStyles.cardContainerTextHomePage} >{item.name}</Text>
+                  </TouchableOpacity>
                 </Card>
               </View>
             </TouchableOpacity>
           )}
         />
       </View>
-      <View style={globalStyles.buttonContainer}>
-        <Button style={styles.buttonStyleContainer} title="Go to Login Page" onPress={pressHandler} />
-      </View>
+      {/* <View style={globalStyles.buttonContainer}>
+        <TouchableOpacity style={styles.buttonStyleContainer} onPress={pressHandler} >
+            <Text style={styles.buttonStyleContainer}>Go to Login Page</Text>
+          </TouchableOpacity>
+      </View> */}
     </>
   )
 }
 
 const styles = StyleSheet.create({
   card1: {
-    backgroundColor: "rgb(157,191,104)",
+    backgroundColor: "#fff",
     height: 100,
     width: 125,
     marginHorizontal: 20,
