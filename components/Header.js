@@ -1,21 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { globalStyles } from '../styles/styles';
-import Navigator from '../routes/loginStack';
+import Navigator from '../routes/drawer';
 
-export default function Header(){
-    return(
+export default function Header() {
+    return (
         <>
-            <Text style={styles.header}>
+            <Navigator />
+            {/* <Text style={styles.header}>
                 Sahukar
-            </Text>
-        <Navigator />
+            </Text> */}
         </>
-    )
+    );
 }
-const styles= StyleSheet.create({
+const styles = StyleSheet.create({
     header: {
-        paddingTop:40,
-        textAlign:"center"
+        paddingTop: 40,
+        textAlign: "center"
     }
 })
