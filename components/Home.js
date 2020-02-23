@@ -93,11 +93,11 @@ const styles = StyleSheet.create({
   cardContainerView: {
     paddingTop: 40
   },
-  buttonStyleContainer: {
-    color: 'blue',
-    backgroundColor: "blue",
-    borderRadius: 5,
-    padding: 10,
-    fontFamily: "Verdana"
-  }
+  // buttonStyleContainer: {
+  //   color: 'blue',
+  //   backgroundColor: "blue",
+  //   borderRadius: 5,
+  //   padding: 10,
+  //   fontFamily: "Verdana"
+  // }
 });
