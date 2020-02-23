@@ -46,73 +46,12 @@ export default function Home({ navigation }) {
     </>
   )
 }
-// <>
-//   <SafeAreaView style={globalStyles.container}>
-//     <ScrollView style={styles.scrollView}>
-//       <View style={globalStyles.container}>
-//         <TouchableOpacity>
-//           <View style={styles.cardContainerView}>
-//             <Card style={styles.card1}>
-//               <Text style={globalStyles.cardContainerTextHomePage}>Daily Expenses</Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-//           <View style={globalStyles.cardContainerView1}>
-//             <Card style={styles.card2}>
-//               <Text style={globalStyles.cardContainerTextHomePage}>Monthly Expenses</Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-//           <View style={globalStyles.cardContainerView1}>
-//             <Card style={styles.card3}>
-//               <Text style={globalStyles.cardContainerTextHomePage}></Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-//           <View style={globalStyles.cardContainerView1}>
-//             <Card style={styles.card4}>
-//               <Text style={globalStyles.cardContainerTextHomePage}></Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-//           <View style={globalStyles.cardContainerView1}>
-//             <Card style={styles.card5}>
-//               <Text style={globalStyles.cardContainerTextHomePage}></Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-//           <View style={globalStyles.cardContainerView1}>
-//             <Card style={styles.card6}>
-//               <Text style={globalStyles.cardContainerTextHomePage}></Text>
-//             </Card>
-//           </View>
-//         </TouchableOpacity>
-//         <TouchableOpacity>
-
-//         </TouchableOpacity>
-//       </View>
-//     </ScrollView>
-//   </SafeAreaView>
-
-// </>
-
 
 const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   backgroundColor: '#fff',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
   card1: {
     backgroundColor: "rgb(157,191,104)",
     height: 100,
-    width: 130,
+    width: 125,
     marginHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
