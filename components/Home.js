@@ -12,7 +12,7 @@ export default function Home({ navigation }) {
     { name: 'Monthly Expenses', id: '2' },
     { name: 'Medical Expenses', id: '3' },
     { name: 'Cash For Education', id: '4' },
-    { name: 'Gifts for Parents/Loved Ones', id: '5' },
+    { name: 'Gifts for Loved Ones', id: '5' },
     { name: 'Party Expenses', id: '6' }
 
   ]);
