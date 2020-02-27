@@ -36,15 +36,16 @@ export default function Home({ navigation }) {
           data={homePageItems}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => handlePress(item.id)}>
-              <View style={styles.cardContainerView}>              
+              <View style={styles.cardContainerView}>                     
                 <Card style={styles.card1}>
+                <ImageBackground source={require('../assets/card_bg_1.jpg')} style={styles.cardBackground}>      
                 <TouchableOpacity
                   onPress={navigateToDetailsForm} 
                   >
                     <Text style={globalStyles.cardContainerTextHomePage} >{item.name}</Text>
                   </TouchableOpacity>
-                </Card>
-               
+                  </ImageBackground> 
+                </Card>               
               </View>
             </TouchableOpacity>
           )}
@@ -57,7 +58,6 @@ export default function Home({ navigation }) {
 
 const styles = StyleSheet.create({
   card1: {
-    backgroundColor: "white",
     height: 100,
     width: 125,
     marginHorizontal: 20,
@@ -67,4 +67,13 @@ const styles = StyleSheet.create({
   cardContainerView: {
     paddingTop: 40
   },
+  cardBackground:{
+    flex: 1,
+    width: 125,
+    height: 100,
+    marginHorizontal: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 1
+  }
 });
