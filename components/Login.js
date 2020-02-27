@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaView, TextInput,ImageBackground } from 'react-native';
 import { Card } from 'react-native-shadow-cards';
 import {globalStyles} from '../styles/styles';
 
@@ -28,17 +28,20 @@ export default function Login() {
 
     return (
         <View style={globalStyles.container}>
+        <ImageBackground source={require('../assets/home_bg_1.png')} style={globalStyles.backgroundImage} >
             <Card style={styles.loginCard}>
-                <Text style={globalStyles.titleText}>Enter Email:</Text>
+                <Text style={[globalStyles.titleText,styles.loginInput]}>Enter Email:</Text>
                 <TextInput 
-                style={[styles.loginInput, !emailValidate? styles.error: null]} 
+                style={[styles.loginInput,!emailValidate? styles.error: null]} 
                 placeholder="Email" 
+                maxLength={50}
                 onChangeText={(text) => validateEmail(text,'Email')}
 
                 />
                 <Text style={globalStyles.titleText}>Password:</Text>
-                <TextInput style={styles.loginInput}
+                <TextInput
                     placeholder="Password"
+                    secureTextEntry={true}
                     onChangeText={(value) => setpassword(value)}
                 />
             </Card>
@@ -50,22 +53,25 @@ export default function Login() {
                  />
               </View>
             </TouchableOpacity>
+            </ImageBackground>
         </View>
     );
 }
 const styles = StyleSheet.create({
     loginCard: {
         height:200,
+        textAlignVertical:'center',
         justifyContent: 'center',
-        display: "flex",
         alignItems: 'center',
-        backgroundColor: 'rgb(117,193,189)',
     },
     loginInput: {
-        padding: 20
+        paddingBottom: 10,
+        width:'100%',        
+        textAlign:'center',
+        justifyContent: 'center',
     },
     error:{
-        borderWidth: 2,
-        borderColor: 'red'
+        borderBottomWidth: 2,
+        borderBottomColor: 'red',
     }
 })

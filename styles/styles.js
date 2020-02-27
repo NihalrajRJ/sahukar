@@ -23,4 +23,12 @@ export const globalStyles = StyleSheet.create({
         paddingTop: 10,
         paddingBottom: 20
     },
+    backgroundImage:{
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        justifyContent: "center",
+        alignItems: "center",
+        opacity: 0.7
+    },
   });
