@@ -29,15 +29,14 @@ export default function Home({ navigation }) {
   return (
     <>
       <View style={globalStyles.container}>
-      <ImageBackground source={require('../assets/back-1.jpg')} style={styles.backgroundImage} >
+      <ImageBackground source={require('../assets/home_bg_1.png')} style={globalStyles.backgroundImage} >
         <FlatList
           numColumns={2}
           keyExtractor={(item) => item.id}
           data={homePageItems}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => handlePress(item.id)}>
-              <View style={styles.cardContainerView}>
-              
+              <View style={styles.cardContainerView}>              
                 <Card style={styles.card1}>
                 <TouchableOpacity
                   onPress={navigateToDetailsForm} 
@@ -58,21 +57,13 @@ export default function Home({ navigation }) {
 
 const styles = StyleSheet.create({
   card1: {
-    backgroundColor: "#75c1bd",
+    backgroundColor: "white",
     height: 100,
     width: 125,
     marginHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  backgroundImage:{
-    flex: 1,
-    width: '100%',
-    height: '100%',
-    justifyContent: "center",
-    alignItems: "center",
-    opacity: 0.7
-},
   cardContainerView: {
     paddingTop: 40
   },
