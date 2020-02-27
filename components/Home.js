@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaView, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, SafeAreaView, FlatList, ImageBackground } from 'react-native';
 import { Card } from 'react-native-shadow-cards';
 import Login from './Login';
 import { globalStyles } from '../styles/styles';
@@ -29,6 +29,7 @@ export default function Home({ navigation }) {
   return (
     <>
       <View style={globalStyles.container}>
+      <ImageBackground source={require('../assets/back-1.jpg')} style={styles.backgroundImage} >
         <FlatList
           numColumns={2}
           keyExtractor={(item) => item.id}
@@ -36,75 +37,43 @@ export default function Home({ navigation }) {
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => handlePress(item.id)}>
               <View style={styles.cardContainerView}>
+              
                 <Card style={styles.card1}>
                 <TouchableOpacity
-                  //style={globalStyles.cardContainerTextHomePage} 
                   onPress={navigateToDetailsForm} 
                   >
                     <Text style={globalStyles.cardContainerTextHomePage} >{item.name}</Text>
                   </TouchableOpacity>
                 </Card>
+               
               </View>
             </TouchableOpacity>
           )}
         />
+        </ImageBackground>
       </View>
-      {/* <View style={globalStyles.buttonContainer}>
-        <TouchableOpacity style={styles.buttonStyleContainer} onPress={pressHandler} >
-            <Text style={styles.buttonStyleContainer}>Go to Login Page</Text>
-          </TouchableOpacity>
-      </View> */}
     </>
   )
 }
 
 const styles = StyleSheet.create({
   card1: {
-    backgroundColor: "#fff",
+    backgroundColor: "#75c1bd",
     height: 100,
     width: 125,
     marginHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  // card2: {
-  //   backgroundColor: 'rgb(117,193,189)',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 70
-  // },
-  // card3: {
-  //   backgroundColor: 'rgb(214,145,140)',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 70,
-  // },
-  // card4: {
-  //   backgroundColor: '#F6C650',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 70,
-  // },
-  // card5: {
-  //   backgroundColor: 'rgb(230,178,120)',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 70,
-  // },
-  // card6: {
-  //   backgroundColor: '#F68250',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   height: 70,
-  // },
+  backgroundImage:{
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    justifyContent: "center",
+    alignItems: "center",
+    opacity: 0.7
+},
   cardContainerView: {
     paddingTop: 40
   },
-  // buttonStyleContainer: {
-  //   color: 'blue',
-  //   backgroundColor: "blue",
-  //   borderRadius: 5,
-  //   padding: 10,
-  //   fontFamily: "Verdana"
-  // }
 });
