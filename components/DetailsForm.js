@@ -24,31 +24,37 @@ export default function DetailsForm() {
     return (
         <>
             <View style={styles.container}>
-                <Text>First Name:</Text>
+                <Text style={styles.formData}>First Name:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="First Name:"
                 />
-                <Text>Last Name:</Text>
+                <Text style={styles.formData}>Last Name:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="Last Name:"
                 />
-                <Text>Father's Name:</Text>
+                <Text style={styles.formData}>Father's Name:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="Father's Name"
                 />
-                <Text>Mother's Name:</Text>
+                <Text style={styles.formData}>Mother's Name:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="Mother's Name:"
                 />
-                <Text>Marital Status:</Text>
+                <Text style={styles.formData}>Marital Status:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="Marital Status:"
                 />
-                <Text>Email Address:</Text>
+                <Text style={styles.formData}>Email Address:</Text>
                 <TextInput
+                    style={styles.formData}
                     placeholder="Email"
                 />
-                <Dropdown
+                <Dropdown style={[styles.cashType]}
                     label='Cash Type'
                     data={data}
                 />
@@ -59,9 +65,17 @@ export default function DetailsForm() {
  const styles = StyleSheet.create({
     container:{
         width:'100%',
-        fontWeight: "900",
-        
-        
+        justifyContent: 'center',
+        textAlign:'center',
 
+    },
+    formData:{
+        width:'100%',
+        textAlign:'center',
+        justifyContent: 'center',
+        padding:10,
+    },
+    cashType:{
+        width:'50%'
     }
 })
