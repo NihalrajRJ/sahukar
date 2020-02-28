@@ -7,10 +7,10 @@ import React from 'react';
 const screens = {
     Home: {
         screen: Home,
-        //title: 'Sahukar',
+        //title: 'Click Money',
         navigationOptions: ({ navigation }) => {
             return {
-                headerTitle: () => <Header navigation={navigation} title='Sahukar'/>
+                headerTitle: () => <Header navigation={navigation} title='Click Money'/>    
             }
         }
     },
