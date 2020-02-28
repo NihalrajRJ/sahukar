@@ -38,7 +38,7 @@ export default function Home({ navigation }) {
             <TouchableOpacity onPress={() => handlePress(item.id)}>
               <View style={styles.cardContainerView}>                     
                 <Card style={styles.card1}>
-                <ImageBackground source={require('../assets/card_bg_1.jpg')} style={styles.cardBackground}>      
+                <ImageBackground source={require('../assets/card_bg_2.png')} style={styles.cardBackground}>      
                 <TouchableOpacity
                   onPress={navigateToDetailsForm} 
                   >
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cardContainerView: {
-    paddingTop: 40
+    paddingTop: 45
   },
   cardBackground:{
     flex: 1,
